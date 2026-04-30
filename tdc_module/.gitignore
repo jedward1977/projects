@@ -1,0 +1,94 @@
+# Simulación y Compilación
+*.vcd
+*.vvp
+*.wdb
+*.shm
+*.trn
+*.fsdb
+*.vpd
+*.vpo
+
+# Vivado (FPGA)
+.Xil/
+*.jou
+*.log
+*.xpr
+*.dcp
+*.bit
+*.ltx
+*.runs/
+*.ip_user_files/
+
+# ISE (FPGA antiguo)
+_xmsgs/
+.project
+.launches
+*.ngr
+*.ncd
+*.pcf
+*.par
+
+# Synopsys (ASIC)
+*.db
+*.rpt
+*.rpt.gz
+*.sdc
+*.sdf
+*.spef
+*.ddc
+work/
+logs/
+
+# Cadence (ASIC)
+xcelium.d/
+xcelium.history
+*.shm
+*.fsdb
+*.wdb
+
+# ModelSim/Questa
+work/
+transcript
+.mgc_launch_dir/
+
+# Archivos temporales
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+*.swo
+*~
+.backup*
+
+# Directorios de build
+build/
+dist/
+bin/
+obj/
+
+# Resultados
+results/*.csv
+results/*.txt
+results/*.log
+
+# Directorios de síntesis
+syn/
+.syn/
+syn_results/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Git
+.gitkeep
