@@ -8,7 +8,32 @@
 *.vpd
 *.vpo
 
-# Vivado (FPGA)
+# Quartus (FPGA)
+db/
+incremental_db/
+output_files/
+simulation/
+timing/
+*.qpf
+*.qsf
+*.sof
+*.pof
+*.jic
+*.rbf
+*.map
+*.fit
+*.sta
+*.rpt
+*.summary
+*.pin
+*.mif
+*.hex
+.qsys_edit/
+hps_isw_handoff/
+ip/
+*.bak
+
+# Vivado (FPGA antiguo)
 .Xil/
 *.jou
 *.log
@@ -28,6 +53,19 @@ _xmsgs/
 *.pcf
 *.par
 
+# OpenLane (ASIC - LibreSilicon)
+openlane/
+.openlane/
+openlane.log
+openlane_run_dir/
+runs/
+flow.tcl
+Makefile.defs
+
+# LibreSilicon PDK
+pdk/
+.pdk/
+
 # Synopsys (ASIC)
 *.db
 *.rpt
@@ -38,6 +76,9 @@ _xmsgs/
 *.ddc
 work/
 logs/
+syn/
+.syn/
+syn_results/
 
 # Cadence (ASIC)
 xcelium.d/
@@ -45,11 +86,16 @@ xcelium.history
 *.shm
 *.fsdb
 *.wdb
+xcelium.log
+xmvhdl.log
+xmsim.log
+xsim.log
 
 # ModelSim/Questa
 work/
 transcript
 .mgc_launch_dir/
+vsim.wlf
 
 # Archivos temporales
 *.o
@@ -60,6 +106,8 @@ transcript
 *.swo
 *~
 .backup*
+*.tmp
+*.temp
 
 # Directorios de build
 build/
@@ -71,8 +119,10 @@ obj/
 results/*.csv
 results/*.txt
 results/*.log
+results/*.dat
+results/*.rpt
 
-# Directorios de síntesis
+# Archivos de síntesis
 syn/
 .syn/
 syn_results/
@@ -83,12 +133,14 @@ __pycache__/
 *.pyo
 *.egg-info/
 .pytest_cache/
+*.egg
 
 # IDE
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 
 # Git
 .gitkeep
